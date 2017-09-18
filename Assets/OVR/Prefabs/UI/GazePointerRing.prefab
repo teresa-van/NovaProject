@@ -1,0 +1,182 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &140268
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 440268}
+  - component: {fileID: 11440266}
+  - component: {fileID: 11440264}
+  - component: {fileID: 33758337617319722}
+  - component: {fileID: 23862917563594754}
+  m_Layer: 5
+  m_Name: GazePointerRing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &440268
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 140268}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.6507292, y: -0.7231573, z: 6.7636495}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11440264
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 140268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30530ad0e40d0a64ea26d753ee4996ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hideByDefault: 1
+  showTimeoutPeriod: 1
+  hideTimeoutPeriod: 0.1
+  dimOnHideRequest: 1
+  depthScaleMultiplier: 0.03
+  cameraRig: {fileID: 0}
+--- !u!114 &11440266
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 140268}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b3e1dcc54f494740b8de386c36dd6bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  emissionScale: 600
+  maxSpeed: 5
+  halfEmission:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 1.9410335
+      outSlope: 1.9410335
+      tangentMode: 34
+    - serializedVersion: 2
+      time: 0.42723325
+      value: 0.82927406
+      inSlope: 1.8966682
+      outSlope: 1.8966682
+      tangentMode: 34
+    - serializedVersion: 2
+      time: 0.96648073
+      value: 1.8281238
+      inSlope: 1.8523029
+      outSlope: 1.8523029
+      tangentMode: 34
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  fullEmission:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: -0.055555556
+      value: 0.17057249
+      inSlope: 0.16982621
+      outSlope: 0.16982621
+      tangentMode: 34
+    - serializedVersion: 2
+      time: 0
+      value: 0.18000728
+      inSlope: -0.058752924
+      outSlope: -0.058752924
+      tangentMode: 34
+    - serializedVersion: 2
+      time: 0.15506701
+      value: 0.13545156
+      inSlope: -0.76317835
+      outSlope: -0.76317835
+      tangentMode: 34
+    - serializedVersion: 2
+      time: 0.18905106
+      value: 0.09334448
+      inSlope: -0.72789305
+      outSlope: -0.72789305
+      tangentMode: 34
+    - serializedVersion: 2
+      time: 0.6526798
+      value: -0.0071523506
+      inSlope: -0.12230137
+      outSlope: -0.12230137
+      tangentMode: 34
+    - serializedVersion: 2
+      time: 1.0015873
+      value: -0.016866395
+      inSlope: -0.02784132
+      outSlope: -0.02784132
+      tangentMode: 34
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  particleTrail: 1
+  particleScale: 0.68
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 140268}
+  m_IsPrefabParent: 1
+--- !u!23 &23862917563594754
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 140268}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 7f31de375e167154aa45929466af30e4, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &33758337617319722
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 140268}
+  m_Mesh: {fileID: 4300000, guid: b67a97d6ec401ca49b3caddea21e8029, type: 2}
